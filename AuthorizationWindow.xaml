@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Логин" HorizontalAlignment="Left" Margin="230,93,0,0" VerticalAlignment="Top" Width="62" FontSize="14" FontFamily="Arial Black"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="230,136,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.511,0.123" FontFamily="Arial Black"/>
+        <TextBox x:Name="textBoxLogin" HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="20" FontSize="14" TextChanged="textBoxLogin_TextChanged"/>
+        <TextBox x:Name= "textBoxPassword" HorizontalAlignment="Center" Margin="0,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Height="20" FontSize="14" TextChanged="textBoxPassword_TextChanged"/>
+        <Button Content="Авторизоваться" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="178" FontWeight="Bold"
+                Background="#FF86EB81" BorderBrush="#FF76C872" OpacityMask="#FF8DE588" Click="Button_Account" FontSize="14" Height="27"/>
+        <Button Content="Выйти" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Click="Button_Click_Out"
+                Background= "#FFE95D6A" FontWeight="Bold" FontSize="14" Height="33" Width="178"/>
+    </Grid>
+</Window>

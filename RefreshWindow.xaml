@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp1.RefreshWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="RefreshWindow" Height="450" Width="400">
+    <StackPanel Margin="20" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <TextBlock Text="Статус:" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="StatusComboBox" DisplayMemberPath="status_name" Width="250" Height="30"/>
+
+        <TextBlock Text="Сотрудник:" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="WorkersComboBox" DisplayMemberPath="worker_name" Width="250" Height="30"/>
+
+        <TextBlock Text="Запчасть:" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="NamePartsComboBox" DisplayMemberPath="name_part_name" Width="250" Height="30"/>
+
+        <TextBlock Text="Клиент:" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="ClientsComboBox" DisplayMemberPath="client_name" Width="250" Height="30">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop Color="#FFF5F5F5" Offset="0.3"/>
+                    <GradientStop Color="#FFDBE8F5" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+
+        <Button Content="Обновить" Click="UpdateButton_Click" Width="150" Height="40" FontSize="14" 
+                Background="#FF87D37C" Foreground="White" HorizontalAlignment="Center"/>
+
+    </StackPanel>
+</Window>

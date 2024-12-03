@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aa2c0beaed5c4e888bd71e72e6ae5c9f" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="AutodetailsModel.Account" Width="1.5" PointX="11.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.Clients" Width="1.5" PointX="3.875" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.NameParts" Width="1.5" PointX="2.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.Requests" Width="1.5" PointX="6.625" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.RequestStatus" Width="1.5" PointX="9.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.Role_" Width="1.5" PointX="9.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutodetailsModel.Workers" Width="1.5" PointX="5.625" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="AutodetailsModel.FK__Account__id_role__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="AutodetailsModel.FK__Requests__client__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="AutodetailsModel.FK__Requests__name_p__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="AutodetailsModel.FK__Requests__status__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="AutodetailsModel.FK__Requests__worker__46E78A0C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
